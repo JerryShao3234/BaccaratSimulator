@@ -5,7 +5,7 @@ This lab implements a game of baccarat using SystemVerilog HDL. The hardware to 
 The code was written and simulated using ModelSim and synthesized with Intel Quartus Prime. Below is the overall design structure.
 
 
-<p align="center"><img src="figures/block-diagram.png" width="50%" height="50%" title="block diagram"></p>
+<p align="center"><img src="block-diagram.png" width="50%" height="50%" title="block diagram"></p>
 
 
 ## 2 How to Play Baccarat
@@ -33,7 +33,7 @@ The code was written and simulated using ModelSim and synthesized with Intel Qua
 card7seg.sv drives the BCD (binary-coded decimal display). Each segmented display has 7 LEDs. When given a value of 0, the individual segment lights up. 
 For reference, here is the specific BCD used in this lab.
 
-<p align="center"><img src="figures/card-7seg.png" width="20%" height="20%" title="card values"></p>
+<p align="center"><img src="card-7seg.png" width="20%" height="20%" title="card values"></p>
 
 datapath.sv connects key modules together and allows Baccarat to run properly. It instantiates necessary wires and registers as per the design.
 
