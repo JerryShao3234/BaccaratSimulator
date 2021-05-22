@@ -35,7 +35,7 @@ For reference, here is the specific BCD used in this lab.
 
 <p align="center"><img src="card-7seg.png" width="20%" height="20%" title="card values"></p>
 
-datapath.sv connects key modules together and allows Baccarat to run properly. It instantiates necessary wires and registers as per the design.
+datapath.sv connects key modules together and allows Baccarat to run properly. It instantiates necessary wires and registers as per the design. It includes a module that describes a 4 bit register for holding each card.
 
 dealcard.sv generates pseudo-random cards using an internal 50 MHz clock.
 
