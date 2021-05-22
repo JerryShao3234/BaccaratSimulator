@@ -1,6 +1,7 @@
 # CPEN-311-LAB-1
 
 ## 1 Introduction:
+
 This lab implements a game of baccarat using SystemVerilog HDL. The hardware to run this on is the DE1-SoC. 
 The code was written and simulated using ModelSim and synthesized with Intel Quartus Prime. Below is the overall design structure.
 
@@ -8,7 +9,8 @@ The code was written and simulated using ModelSim and synthesized with Intel Qua
 <p align="center"><img src="block-diagram.png" width="50%" height="50%" title="block diagram"></p>
 
 
-## 2 How to Play Baccarat
+## 2 How to Play Baccarat:
+
 - Two cards are dealt to both the player and the dealer (i.e., the banker) face up (first card to the player, second card to dealer, third card to the player, fourth card to the dealer).
 - The score of each hand is computed using the face values of each card. 
   - Cards A-9 use face values whereas 10, J, Q, and K have 0 value. Suits do not matter, and Jokers are not included  
@@ -29,7 +31,8 @@ The code was written and simulated using ModelSim and synthesized with Intel Qua
   - otherwise the banker does not get a third card
 - The game is over. Scores are computed as below. Whoever has the higher score wins, or if they are the same, it is a tie.
 
-## 3 File Explanation
+## 3 File Explanation:
+
 card7seg.sv drives the BCD (binary-coded decimal display). Each segmented display has 7 LEDs. When given a value of 0, the individual segment lights up. 
 For reference, here is the specific BCD used in this lab.
 
@@ -47,7 +50,7 @@ task4.sv and task5.sv are identical files which are the top level files for Quar
 
 DE1_SoC.qsf contains the necessary pin assignments for Quartus and the DE1_SoC to connect the onboard hardware with the Verilog code.
 
-## 4 Testbenches
+## 4 Testbenches:
 
 Each file has a testbench that simulates the design using ModelSim. Although not every possible case was simulated (there are far too many), random cases were chosen and tested.
 Each file's corresponding testbench has a "tb_" prefix in front of their respective file names.
