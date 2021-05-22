@@ -48,7 +48,7 @@ statemachine.sv includes a finite statemachine with 9 states. It is traversed us
 
 task4.sv and task5.sv are identical files which are the top level files for Quartus to build the project on. It describes the entire design using each of the files listed above.
 
-DE1_SoC.qsf contains the necessary pin assignments for Quartus and the DE1_SoC to connect the onboard hardware with the Verilog code.
+DE1_SoC.qsf contains the necessary pin assignments for Quartus and the DE1_SoC to connect the onboard hardware with the SystemVerilog code.
 
 ## 4 Testbenches:
 
