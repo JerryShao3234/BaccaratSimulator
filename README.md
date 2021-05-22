@@ -41,8 +41,7 @@ dealcard.sv generates pseudo-random cards using an internal 50 MHz clock.
 
 scorehand.sv calculates the score using a combinational circuit. The score follows the rules outlined above.
 
-statemachine.sv includes a finite statemachine with 9 states. It is traversed using the "slow_clock" which is simulated by button presses on the DE1-SoC.
-A combinational circuit works with the datapath to enable registers for new cards and displays the result using LEDs.
+statemachine.sv includes a finite statemachine with 9 states. It is traversed using the "slow_clock" which is simulated by button presses on the DE1-SoC. The circuit uses the negative edge of the button press. There is a synchronous reset and stage in place. A combinational circuit works with the datapath to enable registers for new cards and displays the result using LEDs.
 
 task4.sv and task5.sv are identical files which are the top level files for Quartus to build the project on. It describes the entire design using each of the files listed above.
 
