@@ -45,8 +45,11 @@ statemachine.sv includes a finite statemachine with 9 states. It is traversed us
 
 task4.sv and task5.sv are identical files which are the top level files for Quartus to build the project on. It describes the entire design using each of the files listed above.
 
+DE1_SoC.qsf contains the necessary pin assignments for Quartus and the DE1_SoC to connect the onboard hardware with the Verilog code.
+
 ## 4 Testbenches
 
 Each file has a testbench that simulates the design using ModelSim. Although not every possible case was simulated (there are far too many), random cases were chosen and tested.
+Each file's corresponding testbench has a "tb_" prefix in front of their respective file names.
 "Assert" statements were used with "$display" to allow for a more convienient viewing process. Of course, the waveform also exists in tandem with these terminal messages.
 
