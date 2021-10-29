@@ -1,4 +1,4 @@
-# CPEN-311-LAB-1
+# Baccarat Simulator
 
 ## 1 Introduction:
 
